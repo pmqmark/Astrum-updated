@@ -7,7 +7,7 @@ const Footer: FC = () => {
   return (
     <footer className="bg-darkmode border-t border-dark_border text-white">
       <div className="container mx-auto max-w-6xl px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Logo & About */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/">
@@ -32,22 +32,22 @@ const Footer: FC = () => {
             <h3 className="text-blue-500 text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#how-it-works" className="hover:text-primary font-bold">
+                <Link href="/#" className="hover:text-primary font-bold">
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link href="/loan-products" className="hover:text-primary font-bold">
+                <Link href="/#" className="hover:text-primary font-bold">
                   Loan Products
                 </Link>
               </li>
               <li>
-                <Link href="/success-stories" className="hover:text-primary font-bold">
+                <Link href="/#" className="hover:text-primary font-bold">
                   Success Stories
                 </Link>
               </li>
               <li>
-                <Link href="/faqs" className="hover:text-primary font-bold">
+                <Link href="/#" className="hover:text-primary font-bold">
                   FAQs
                 </Link>
               </li>

@@ -58,7 +58,7 @@ export default function ApplyPage() {
           <div className="text-center mb-16 pt-[28px]">
             <h1 className="text-4xl md:text-5xl font-bold text-midnight_text dark:text-white">
               Apply for Your{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#164069] to-[#13C8EC]">
+              <span className="text-transparent bg-clip-text bg-blue-500">
                 Education Loan
               </span>
             </h1>
@@ -244,7 +244,7 @@ export default function ApplyPage() {
 
                   <button
                     type="submit"
-                    className="w-full py-3 bg-gradient-to-r from-[#164069] to-[#13C8EC] text-white rounded-lg font-semibold flex justify-center items-center hover:opacity-90 transition"
+                    className="w-full py-3 bg-blue-500 text-white rounded-lg font-semibold flex justify-center items-center hover:opacity-90 transition"
                   >
                     Check My Eligibility
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -255,7 +255,7 @@ export default function ApplyPage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-[#164069] to-[#13C8EC] text-white rounded-xl p-6">
+              <div className="bg-blue-500 text-white rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-6">Why Apply Through Astrum?</h3>
                 <div className="space-y-4">
                   {benefits.map((b) => (
