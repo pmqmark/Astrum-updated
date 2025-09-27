@@ -22,9 +22,9 @@ const CheckEligibility = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/apply">
-              <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#164069] to-[#13C8EC] text-white font-semibold hover:opacity-90 transition flex items-center justify-center">
+              <button className="px-6 py-3 rounded-lg bg-blue-500 text-white font-semibold hover:opacity-90 transition flex items-center justify-center">
                 Check My Eligibility
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const CheckEligibility = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="px-6 py-3 rounded-lg border border-gray-400 text-gray-800 dark:text-white dark:border-white hover:bg-white dark:hover:bg-gray-700 transition font-semibold">
+              <button className="px-6 py-3 rounded-lg border border-gray-400 text-gray-800 dark:text-white dark:border-white hover:bg-white dark:hover:bg-gray-700 transition font-semibold flex items-center justify-center">
                 💬 WhatsApp Us
               </button>
             </a>

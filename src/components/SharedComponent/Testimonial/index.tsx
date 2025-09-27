@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
+import profile from '../../../../public/images/logo/profile.png'
 
 const testimonials = [
   {
@@ -14,7 +15,7 @@ const testimonials = [
       
 "Astrum made my Stanford dream possible when others said no. The process was so smooth, and they helped me understand every step. Today, I'm working at Google!",
     rating: 5,
-    profile: '/images/testimonial/profile1.png',
+    profile: profile,
     loanAmount: '₹75 Lakhs',
   },
   {
@@ -24,7 +25,7 @@ const testimonials = [
     comment:
       'The team at Astrum was incredibly supportive throughout my application process. They helped me secure funding for Harvard when I thought it was impossible. Now I\'m working at Goldman Sachs!',
     rating: 5,
-    profile: '/images/testimonial/profile2.png',
+    profile: profile,
     loanAmount: '₹85 Lakhs',
   },
   {
@@ -34,7 +35,7 @@ const testimonials = [
    comment:
       "Astrum's expertise in education loans is unmatched. They guided me through every step and helped me get the best rates. MIT was my dream, and they made it reality!",
     rating: 5,
-    profile: '/images/testimonial/profile3.png',
+    profile: profile,
     loanAmount: '₹70 Lakhs',
   },
   {
@@ -44,7 +45,7 @@ const testimonials = [
     comment:
       'Highly recommended! The team explained everything clearly and made the process stress-free.',
     rating: 5,
-    profile: '/images/testimonial/profile4.png',
+    profile: profile,
     loanAmount: '15 Lakhs',
   },
 ]
@@ -81,7 +82,7 @@ const Testimonial = () => {
         <Slider {...settings}>
           {testimonials.map((t, i) => (
             <div key={i} className="px-3">
-              <div className="bg-white dark:bg-darkmode rounded-xl shadow-md h-[250px] p-6 flex flex-col">
+              <div className="bg-white dark:bg-darkmode rounded-xl shadow-md lg:h-[300px] md:h-[350px] h-[350px] p-6 flex flex-col">
                 {/* Rating */}
                 <div className="flex mb-4">
                   {Array.from({ length: 5 }).map((_, idx) => (
