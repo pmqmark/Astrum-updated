@@ -1,15 +1,10 @@
-import React from 'react'
 import { count } from '@/app/api/data'
 import Image from 'next/image'
 
-const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
+const Counter = () => {
   return (
     <section
-      className={` ${
-        isColorMode
-          ? 'dark:bg-darklight bg-section'
-          : 'dark:bg-darkmode bg-white'
-      }`}>
+      className="bg-darkmode text-white">
       <div className='container mx-auto max-w-6xl px-4'>
         <div className='flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-9'>
           {count.map((item, index) => (

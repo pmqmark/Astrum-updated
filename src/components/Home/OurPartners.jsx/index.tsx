@@ -12,7 +12,7 @@ const partners = [
 
 const OurPartners = () => {
   return (
-    <section className="py-12 bg-gray-50 dark:bg-darkmode">
+    <section className="py-12 bg-darkmode">
       <div
       data-aos='fade-right'
           data-aos-delay='200'

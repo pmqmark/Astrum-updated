@@ -9,15 +9,15 @@ import Portfolio from '@/components/SharedComponent/portfollio';
 import Testimonial from '@/components/SharedComponent/Testimonial';
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Venus",
+  title: "Astrum Fintech",
 };
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Counter isColorMode={false} />
-      <Progresswork isColorMode={false} />
+      <Counter />
+      <Progresswork />
       <Services />
       <Portfolio />
       <Testimonial />

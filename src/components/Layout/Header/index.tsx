@@ -67,7 +67,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed h-24 top-0 py-1 z-50 w-full dark:bg-transparent transition-all ${
         sticky
-          ? 'shadow-lg bg-white dark:shadow-dark-md dark:bg-darklight!'
+          ? 'shadow-lg bg-darklight!'
           : 'shadow-none'
       }`}
     >

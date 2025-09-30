@@ -1,9 +1,9 @@
-import HeroSub from "@/components/SharedComponent/HeroSub";
 import NotFound from "@/components/NotFound";
+import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 Page | Venus ",
+  title: "404 Page | Astrum",
 };
 
 const ErrorPage = () => {

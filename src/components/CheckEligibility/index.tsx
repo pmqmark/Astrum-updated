@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const CheckEligibility = () => {
   return (
-    <section className="py-16 bg-section dark:bg-darklight">
+    <section className="py-16 bg-darklight">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Container */}
         <div className="transition-all duration-700 transform opacity-100 translate-y-0">
@@ -16,7 +16,7 @@ const CheckEligibility = () => {
           </h2>
 
           {/* Description */}
-          <p className="font-lato text-lg text-gray-700 dark:text-white/70 mb-8 max-w-2xl mx-auto">
+          <p className="font-lato text-lg text-white/70 mb-8 max-w-2xl mx-auto">
             Join thousands of students who've made their dreams reality. Let's
             make yours happen too.
           </p>
