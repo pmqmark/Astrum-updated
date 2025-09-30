@@ -8,11 +8,9 @@ import {
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-interface ProgressworkProps {
-  isColorMode: boolean
-}
+interface ProgressworkProps {}
 
-export default function Progresswork({ isColorMode }: ProgressworkProps) {
+export default function Progresswork() {
   const [loanAmount, setLoanAmount] = useState<string>('250000')
   const [interestRate, setInterestRate] = useState<string>('6.5')
   const [loanTerm, setLoanTerm] = useState<string>('30')
@@ -95,9 +93,7 @@ export default function Progresswork({ isColorMode }: ProgressworkProps) {
 
   return (
     <section
-      className={`scroll-mt-25 ${
-        isColorMode ? 'dark:bg-darklight bg-section' : 'dark:bg-darkmode bg-white'
-      } py-10`}
+      className={`scroll-mt-25 bg-darklight `}
       id="about"
     >
       <div className="container mx-auto max-w-6xl px-4">
