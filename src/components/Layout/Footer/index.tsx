@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-darkmode border-t border-dark_border text-white">
+     <footer className='bg-darkmode relative z-1 border-t border-dark_border px-6'>
       <div className="container mx-auto max-w-6xl px-4 py-12">
         <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Logo & About */}

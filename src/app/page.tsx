@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Counter />
-      <Progresswork />
+      <Counter  isColorMode={false} />
+      <Progresswork  isColorMode={false} />
       <Services />
       <Portfolio />
       <Testimonial />
