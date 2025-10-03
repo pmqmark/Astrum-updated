@@ -6,7 +6,7 @@ const partners = [
   { name: "Partner 3", logo: "/images/partners/auxilo.webp" },
   { name: "Partner 4", logo: "/images/partners/credila.png"},
   { name: "Partner 5", logo: "/images/partners/poonawalla.avif"},
-  { name: "Partner 6", logo: "/images/partners/prodigy.jpeg"},
+  { name: "Partner 6", logo: "/images/partners/prodigy-finance-logo.svg"},
    { name: "Partner 7", logo: "/images/partners/mpower.webp"},
 ];
 

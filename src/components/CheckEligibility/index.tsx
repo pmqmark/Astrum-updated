@@ -16,7 +16,7 @@ const CheckEligibility = () => {
           </h2>
 
           {/* Description */}
-          <p className="font-lato text-lg text-white/70 mb-8 max-w-2xl mx-auto">
+          <p className="font-lato text-lg text-[#2f73f2] font-medium mb-8 max-w-2xl mx-auto">
             Join thousands of students who've made their dreams reality. Let's
             make yours happen too.
           </p>
