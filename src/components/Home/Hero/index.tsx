@@ -14,45 +14,45 @@ const Hero = () => {
           data-aos-duration='1000'>
           <div className='flex gap-2 items-center md:mt-0 mt-5'>
             <span className='w-3 h-3 rounded-full bg-success'></span>
-            <span className='font-medium text-midnight_text text-sm dark:text-white/50'>
+            <span className='font-medium text-gray-700 text-sm dark:text-white/50'>
               Invest in yourself
             </span>
           </div>
-          <h1 className='text-midnight_text font-bold dark:text-white text-4xl  md:text-5xl md:leading-[1.15]'>
+          <h1 className='text-[#2f73f2] font-bold dark:text-white text-4xl  md:text-5xl md:leading-[1.15]'>
             Finance Your Future,
 Not Just Your Fees
           </h1>
-          <p className='text-grey dark:text-white/70 text-xl font-semibold md:py-0 py-3'>
+          <p className='text-gray-700 dark:text-white/70 text-xl font-semibold md:py-0 py-3'>
             Transform your education dreams into reality with our student-friendly loan solutions. Quick approvals, competitive rates, and zero hidden charges.
           </p>
           {/* ✅ Bullet points section */}
           <div className="grid grid-cols-2 gap-4 text-sm md:py-0 py-4">
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">No Collateral Required</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">No Collateral Required</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Quick After Approval</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Quick After Approval</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Flexible Payback</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Flexible Payback</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Expert Guidance</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Expert Guidance</span>
               </div>
             </div>
           <div className='flex flex-row gap-5'>
           <a
             href='#learn-more'
-            className='py-3 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition duration-300 px-8'>
+            className='py-3 bg-[#2f73f2] text-white rounded-md text-center hover:bg-blue-700 transition duration-300 px-8'>
             Check My Eligibility
           </a>
           <a
             href='#learn-more'
-            className='py-3 text-darklight bg-white text-center  rounded-md hover:bg-blue-700 transition duration-300 px-8'>
+            className='py-3 text-[#2f73f2] bg-white text-center rounded-md hover:bg-blue-700 hover:text-white transition duration-300 px-8'>
             Talk to Expert
           </a>
           </div>
@@ -84,9 +84,9 @@ Not Just Your Fees
               />
             </div>
             <div>
-              <p className='text-sm font-normal text-grey max-w-56'>
+              <p className='text-sm font-normal text-gray-600 max-w-56'>
                 Need help?{' '}
-                <Link href='#' className='text-primary hover:text-blue-700'>
+                <Link href='#' className='text-[#2f73f2] hover:text-blue-700'>
                   Contact our experts
                 </Link>{' '}
                 Tell us about your project
@@ -97,7 +97,7 @@ Not Just Your Fees
 
         <div className="md:col-span-6 col-span-12 relative before:absolute before:content-[''] before:bg-[url('/images/hero/line-leyar.svg')] before:bg-no-repeat before:left-1/2 before:top-0 before:h-24 before:w-52 before:-z-10 before:translate-x-70% before:-translate-y-40% lg:before:inline-block before:hidden after:absolute after:content-[''] after:bg-[url('/images/hero/round-leyar.svg')] after:bg-no-repeat xl:after:inline-block after:hidden after:left-0 after:bottom-0 after:h-6.25 after:w-6.25 after:-z-10 after:-translate-x-1/2 after:translate-y-1/2">
           <Image
-            src='/images/hero/hero.jpg'
+            src='/images/hero/hero-new.png'
             alt='hero-image'
             width={350}
             height={150}

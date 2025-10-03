@@ -16,12 +16,21 @@ const Footer: FC = () => {
                 alt="Astrum Logo"
                 width={160}
                 height={50}
-                style={{ width: '150px', height: '150px' }}
+                style={{ width: '90px', height: '90px' }}
                 quality={100}
-                unoptimized
+                className="dark:block hidden"
+              />
+              <Image
+                src="/images/logo/astrumwhite.png"
+                alt="Astrum Logo"
+                width={160}
+                height={50}
+                style={{ width: '90px', height: '90px' }}
+                quality={100}
+                className="dark:hidden"
               />
             </Link>
-            <p className="mt-6 text-sm leading-relaxed font-bold">
+            <p className="mt-6 text-sm leading-relaxed font-bold text-black dark:text-white">
               Finance Your Future, Not Just Your Fees. Making education loans
               simple, transparent, and accessible for every student.
             </p>
@@ -107,16 +116,16 @@ const Footer: FC = () => {
 
         {/* Bottom Section */}
         <div className="mt-12 border-t border-dark_border pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <ul className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-white/50">
+          <ul className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
             <li>
-              <Link href="/#about" className="hover:text-primary">
+              <Link href="/#about" className="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300 font-medium">
                © 2024 Astrum Fintech. All rights reserved
               </Link>
             </li>
            
            
           </ul>
-          <p className="text-sm text-white/50 text-center md:text-right">
+          <p className="text-sm text-black dark:text-white font-medium text-center md:text-right">
             🔒 Your data is 100% secure with us
             
           </p>

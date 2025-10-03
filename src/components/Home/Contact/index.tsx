@@ -18,7 +18,7 @@ const Contactform = () => {
             </div>
             <h2 className='sm:text-4xl text-[28px] leading-tight font-bold text-white py-6'>
               Ready to Start Your Education Journey?
-            </h2> <h2 className='sm:text-xl text-[20px] leading-tight font-bold text-white py-4'>
+            </h2> <h2 className='sm:text-xl text-[20px] leading-tight font-bold text-[#2f73f2] py-4'>
               Join thousands of students who've made their dreams reality. Let's make yours happen too.
             </h2>
             <div className='grid grid-cols-6 pb-12 border-b border-dark_border '>

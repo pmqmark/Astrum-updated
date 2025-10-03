@@ -13,7 +13,7 @@ const CtaSection = () => {
           {/* Left: Image */}
           <div className="lg:w-1/2 w-full relative">
             <Image
-              src="/images/blog/studyabroad.webp"
+              src="/images/blog/studyabroad.jpg"
               alt="CTA Illustration"
               width={600}
               height={400}
