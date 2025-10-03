@@ -28,20 +28,20 @@ Not Just Your Fees
           {/* ✅ Bullet points section */}
           <div className="grid grid-cols-2 gap-4 text-sm md:py-0 py-4">
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">No Collateral Required</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">No Collateral Required</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Quick After Approval</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Quick After Approval</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Flexible Payback</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Flexible Payback</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-primaryColor" />
-                <span className="font-segoe-ui">Expert Guidance</span>
+                <CheckCircle className="w-5 h-5 text-black dark:text-white" />
+                <span className="font-segoe-ui text-black dark:text-white">Expert Guidance</span>
               </div>
             </div>
           <div className='flex flex-row gap-5'>

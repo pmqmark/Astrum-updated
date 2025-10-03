@@ -26,13 +26,13 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
   href={item.href}
   className={`text-base flex py-2 font-normal 
-    text-[#2f73f2] 
-    hover:text-blue-700 
-    dark:text-[#2f73f2] 
-    dark:hover:text-blue-700
-    ${path === item.href ? 'text-blue-700' : ''} 
-    ${path.startsWith("/blog") && item.href === "/blog" ? "text-blue-700" : ""} 
-    ${path.startsWith("/portfolio") && item.href === "/portfolio" ? "text-blue-700" : ""}`}
+    text-black 
+    hover:text-gray-700 
+    dark:text-white 
+    dark:hover:text-gray-300
+    ${path === item.href ? 'text-black font-bold' : ''} 
+    ${path.startsWith("/blog") && item.href === "/blog" ? "text-black font-bold" : ""} 
+    ${path.startsWith("/portfolio") && item.href === "/portfolio" ? "text-black font-bold" : ""}`}
 >
   {item.label}
   {item.submenu && (
