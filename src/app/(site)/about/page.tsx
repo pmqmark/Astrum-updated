@@ -19,8 +19,8 @@ const page = () => {
         description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
         breadcrumbLinks={breadcrumbLinks}
       />
-       <Counter  />
-       <Progresswork />
+      <Counter isColorMode={true} />
+       <Progresswork isColorMode={true} />
     </>
   );
 };

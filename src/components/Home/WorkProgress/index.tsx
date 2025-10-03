@@ -8,9 +8,11 @@ import {
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-interface ProgressworkProps {}
+interface ProgressworkProps {
+  isColorMode: boolean
+}
 
-export default function Progresswork() {
+const Progresswork = ({ isColorMode }: ProgressworkProps) => {
   const [loanAmount, setLoanAmount] = useState<string>('250000')
   const [interestRate, setInterestRate] = useState<string>('6.5')
   const [loanTerm, setLoanTerm] = useState<string>('30')
@@ -24,9 +26,7 @@ export default function Progresswork() {
   })
 
   const parseNumber = (v: string) => {
-    // allow digits and single dot
     const cleaned = v.replace(/[^\d.]/g, '')
-    // avoid multiple dots
     const parts = cleaned.split('.')
     return parts.length <= 1
       ? cleaned
@@ -44,13 +44,13 @@ export default function Progresswork() {
         totalInterest: 0,
         totalAmount: 0,
         numberOfPayments: 0,
-        principal: principal,
+        principal,
       })
       return
     }
 
     const monthlyRate = annualRate / 100 / 12
-    const numberOfPayments = Math.round(years * 12) // integer months
+    const numberOfPayments = Math.round(years * 12)
 
     let monthlyPayment = 0
     if (monthlyRate > 0) {
@@ -74,7 +74,6 @@ export default function Progresswork() {
 
   useEffect(() => {
     calculateLoan()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loanAmount, interestRate, loanTerm])
 
   const formatCurrency = (amount: number) =>
@@ -85,7 +84,6 @@ export default function Progresswork() {
       maximumFractionDigits: 2,
     }).format(isFinite(amount) ? amount : 0)
 
-  // calculate bar widths safely
   const principalPct =
     results.totalAmount > 0 ? (results.principal / results.totalAmount) * 100 : 0
   const interestPct =
@@ -93,9 +91,12 @@ export default function Progresswork() {
 
   return (
     <section
-      className={`scroll-mt-25 bg-darklight `}
-      id="about"
-    >
+      className={`scroll-mt-25 ${
+        isColorMode
+          ? 'dark:bg-darklight bg-section'
+          : 'dark:bg-darkmode bg-white'
+      }`}
+      id='about'>
       <div className="container mx-auto max-w-6xl px-4">
         <div className="grid md:grid-cols-12 items-center gap-7">
           {/* Left image */}
@@ -278,3 +279,4 @@ export default function Progresswork() {
     </section>
   )
 }
+export default Progresswork

@@ -3,10 +3,12 @@ import Image from 'next/image'
 
 const CtaSection = () => {
   return (
-    <section className="py-16 bg-darklight">
+     <section
+      className='flex flex-wrap justify-center dark:bg-darkmode'
+      id='blog'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Container */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 bg-darkmode rounded-2xl shadow-xl overflow-hidden transition-all duration-700">
+        <div className="flex flex-col lg:flex-row items-center gap-8 dark:bg-darkmode rounded-2xl shadow-xl overflow-hidden transition-all duration-700">
           
           {/* Left: Image */}
           <div className="lg:w-1/2 w-full relative">

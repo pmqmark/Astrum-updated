@@ -67,8 +67,8 @@ const Testimonial = () => {
 
   return (
     <section
-      className="scroll-mt-24 bg-darklight border-none"
-      id="testimonials"
+      className='scroll-mt-24 bg-section dark:bg-darklight border-none'
+      id='testimonials'
     >
       <div className="container mx-auto max-w-6xl px-4">
         {/* Header */}

@@ -2,7 +2,7 @@ import PortfolioCard from '@/components/SharedComponent/portfollio/Portfolio-car
 
 const Portfolio = () => {
   return (
-    <section id='portfolio' className='bg-darkmode'>
+    <section id='portfolio' className='dark:bg-darkmode'>
       <div className='text-center lg:px-0 px-8'>
         <div
           className='flex gap-2 items-center justify-center'
