@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
@@ -10,6 +11,11 @@ import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Astrum Fintech",
+  themeColor: "#ffffff",
+  other: { "color-scheme": "light" },
+};
 
 export default function RootLayout({
   children,
@@ -20,14 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-white text-midnight_text`}>
       <NextTopLoader />
       <AuthDialogProvider>
       <SessionProviderComp session={session}>
         <ThemeProvider
           attribute="class"
-          enableSystem={true}
-          defaultTheme="system"
+          enableSystem={false}
+          defaultTheme="light"
+          forcedTheme="light"
         >
           <Aoscompo>
             <Header />
