@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: "Astrum Fintech",
   themeColor: "#ffffff",
   other: { "color-scheme": "light" },
+  icons: {
+    icon: "/images/logo/astrumwhite.png",
+    shortcut: "/images/logo/astrumwhite.png",
+    apple: "/images/logo/astrumwhite.png",
+  },
 };
 
 export default function RootLayout({
